@@ -3,3 +3,15 @@
 2. Code Basics : [Popular Models on GitHub](https://github.com/codebasics/py/tree/master/ML)
 3. [From scratch notebook](https://www.kaggle.com/code/fareselmenshawii/linear-regression-from-scratch)
 4. [From scratch video](https://www.youtube.com/watch?v=VmbA0pi2cRQ)
+5. Did two codewalks by codebasics - sklearn
+
+## Logistic Regression
+1. Andrew's lectures
+2. Did two codewalks by codebasics
+3. [from scratch video](https://www.youtube.com/watch?v=nzNp05AyBM8)
+
+## Regularisation
+1. Andrew's Lectures
+
+### L1 and L2 Regularisation
+
