@@ -39,7 +39,8 @@ $$ J(w) = L(w) + \sum_{i=1}^{N}{|{w_i}^2|}$$
 - L2 regularisation prevents explosion of parameters to large values
 - Brings points closer to origin by larger amount at which slope of contour is minimum. 
 
-## Naive-Bayes Algorithm  
+## Naive-Bayes Algorithm
+[scikit explanation](https://scikit-learn.org/stable/modules/naive_bayes.html)
 ### Multinomial Naive-Bayes 
 [StatQuest](https://www.youtube.com/watch?v=O2L2Uv9pdDA)
 - Take example of spam classification:
