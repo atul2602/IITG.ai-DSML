@@ -10,6 +10,8 @@
 2. Did two codewalks by codebasics
 3. [from scratch video](https://www.youtube.com/watch?v=nzNp05AyBM8)
 
+---
+
 ## Regularisation
 1. Andrew's Lectures
 2. codewalks by codebasics
@@ -38,6 +40,8 @@ $$ J(w) = L(w) + \sum_{i=1}^{N}{|{w_i}^2|}$$
 - Optimal value of J lies at a point where contours of L(w) and regularisation term _touch_ each other.
 - L2 regularisation prevents explosion of parameters to large values
 - Brings points closer to origin by larger amount at which slope of contour is minimum. 
+
+---
 
 ## Naive-Bayes Algorithm
 [scikit explanation](https://scikit-learn.org/stable/modules/naive_bayes.html)
