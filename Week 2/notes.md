@@ -47,6 +47,7 @@ $$ J(w) = L(w) + \sum_{i=1}^{N}{|{w_i}^2|}$$
 [scikit explanation](https://scikit-learn.org/stable/modules/naive_bayes.html)
 ### Multinomial Naive-Bayes 
 [StatQuest](https://www.youtube.com/watch?v=O2L2Uv9pdDA)
+- Discrete Features
 - Take example of spam classification:
     - Store the words with their conditional probability distributions : $P( Word | Spam ) , P( Word | Not Spam)$
     - Define **Prior Probability** : Initial guess that message is normal, using training data
@@ -59,6 +60,7 @@ $$ J(w) = L(w) + \sum_{i=1}^{N}{|{w_i}^2|}$$
 
 ### Gaussian Naive-Bayes
 [StatQuest](https://www.youtube.com/watch?v=H3EjCKtlVog)
+- Continuous features
 - Take binary classification of a person liking a movie or not based on popcorn/Soda/candy habits:
     - Store mean and variance for each of the features among the two classes, and create **Gaussian Distributions**
     - Prior Probability same as above
