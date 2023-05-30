@@ -94,7 +94,7 @@ from sklearn.metric import mean_squared_error
 mean_squared_error(y_predicted, y_test)
 ```
 
-#### Mean Squared Error (MSE)
+#### Root Mean Squared Error (MSE)
 
 $$RMSE=\frac{1}{N}\cdot \sqrt{\sum_{i=1}^{N} ({y_i - \hat{y_i}})^{2}}$$
 - Most common metric
