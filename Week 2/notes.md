@@ -69,6 +69,68 @@ $$ J(w) = L(w) + \sum_{i=1}^{N}{|{w_i}^2|}$$
         - $P(No Likes) * P(Popcorn = y_1 | Likes) * P(Soda = y_2 | No Likes) * P(Candy = y_3 | No Likes) \propto P(No Likes | y)$
     - Read Cross Validation for best features 
 
+---
+## Evaluation Metrics
+- Need? Single residuals fail to provide an overall picture.
+### Regression
+#### Mean Absolute Error (MAE)
+
+$$MAE=\frac{1}{N}\cdot\sum_{i=1}^{N} |{y_i - \hat{y_i}}|$$
+- Fails to punish big errors
+- MAE is not differentiable, so need additional optimisers
+- Robust to outliers
+```python
+from sklearn.metric import mean_absolute_error
+mean_absolute_error(y_predicted, y_test)
+```
+
+#### Mean Squared Error (MSE)
+
+$$MSE=\frac{1}{N}\cdot\sum_{i=1}^{N} ({y_i - \hat{y_i}})^{2}$$
+- Not robust to outliers, catches them easily
+- Overestimates weakness (>1) and understimates (when <1)
+```python
+from sklearn.metric import mean_squared_error
+mean_squared_error(y_predicted, y_test)
+```
+
+#### Mean Squared Error (MSE)
+
+$$RMSE=\frac{1}{N}\cdot \sqrt{\sum_{i=1}^{N} ({y_i - \hat{y_i}})^{2}}$$
+- Most common metric
+```python
+from sklearn.metric import mean_squared_error
+mean_squared_error(y_predicted, y_test, squared = False)
+```
+#### Max Error
+
+$$ME=\max_{i=1}^{N} |{y_i - \hat{y_i}}|$$
+```python
+from sklearn.metric import max_error
+max_error(y_predicted, y_test)
+```
+
+#### R-squared Score, coefficient of determination
+- Measures the proportion of variance of the dependent variable explained by the regression model
+- When we add new features (even irrelevant), then R2 score increases
+- R2 = 1, means good model
+$$R^2 = 1 - \frac{SSE}{SST}$$
+$$SSE =  \sum_{i=1}^{N} ({y_i - \hat{y_i}})^{2}$$
+$$SST =  \sum_{i=1}^{N} ({y_i - \bar{y}})^{2}$$
+```python
+from sklearn.metric import r2_score
+r2_score(y_predicted, y_test)
+```
+
+#### Adjusted R-squared
+- Penalises adding more independent variables
+$$R_{adj}^{2} = \left(\frac{(1-R^2)(n-1)}{n-k-1} \right)$$
+where, n = no. of data points, k = no. of indep features
+
+### Classification
+
+#### 
+
 
 
 
