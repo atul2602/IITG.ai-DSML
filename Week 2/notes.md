@@ -129,7 +129,53 @@ where, n = no. of data points, k = no. of indep features
 
 ### Classification
 
-#### 
+#### Confusion Matrix 
+<p align = "center">
+    <img width="368" alt="image" src="https://github.com/atul2602/IITG.ai-DSML/assets/61497490/8b57d2da-3534-4457-898e-728074dea42c">
+</p> 
+- Applicable to multi-class also
+- Really beautiful metric, combined with seaborn
+
+#### Accuracy
+$$Accuracy = \frac{No. of Points Correctly Classified}{Total No. of Points}$$
+- Good for well-balanced problems, not for others (eg. in rare disease, 0 will have high accuracy)
+
+#### Recall
+$$Recall = \frac{True Positive}{True Positive + False Negative}$$
+- What percent positives were recalled from the set
+
+#### Precision
+$$Precision = \frac{True Positives}{True Positives + False Negatives}$$
+- In pursuit of getting positive, how many negatives are also labelled positives?
+
+#### F1 Score
+$$F1 Score = Harmonic mean of Precision and Recall$$
+- Combined metric of Recall and precision
+
+#### Specificity
+$$Specificity = \frac{True Negatives}{True Negative + False Positives}$$
+- Similar to recall, just for negatives
+
+#### ROC(Receiver Operator Characteristic)
+<p align = "center">
+<img width="368" alt="image" src="https://github.com/atul2602/IITG.ai-DSML/assets/61497490/a1c961e6-ee5d-4768-bfce-f023e1d67de2">
+</p> 
+
+- Each dot represents a threshold
+- Green circle is the best threshold, maxm sensitivity, and maxm specificity
+
+#### AUC
+<p align = "center">
+<img width="368" alt="image" src="https://github.com/atul2602/IITG.ai-DSML/assets/61497490/6d4c059e-1482-4435-baca-60489bfaf210">
+</p> 
+
+- Each line denotes a different model
+- Higher the area, better the model
+
+> Read more from [here](https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5)
+
+
+
 
 
 
