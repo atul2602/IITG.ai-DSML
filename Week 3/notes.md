@@ -61,4 +61,16 @@ $$(a \cdot b + r)^{d}$$ expands to $$(a\sqrt{r}, a^2, r).(b\sqrt{r}, b^2, r)$$ w
       - Assuming $Y_{i} \cdot (\vec{w} \cdot \vec{x_{i}} + b) \ge 1$ 
       - Now, distance between $x_1$ on $\pi_{+}$ and $x_2$ on $\pi_{-}$ is $(\vec{x_2} - \vec{x_1}) \cdot \frac{\vec{w}}{|w|}$, simplifies to $\frac{2}{|w|}$
 
+#### Soft Margin SVM 
 
+$$\min_{(w,b)} \frac{|w|}{2} + C \cdot \sum_{i=1}^{n} \zeta_{i}$$  
+
+$$\zeta_{i} = Max(0, d(x_i , Support Plane))$$
+
+- First term is `margin error` or regularisation loss and second term is `classification error` or hinge loss
+- `C` is a hyperparameter
+
+#### Kernel Trick
+<img width="266" alt="image" src="https://github.com/atul2602/IITG.ai-DSML/assets/61497490/87cfe001-0736-4064-ad6d-8c7c0a307fc9">
+- Implementation
+- New Kernel : Gaussian
