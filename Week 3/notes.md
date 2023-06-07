@@ -71,6 +71,9 @@ $$\zeta_{i} = Max(0, d(x_i , Support Plane))$$
 - `C` is a hyperparameter
 
 #### Kernel Trick
-<img width="266" alt="image" src="https://github.com/atul2602/IITG.ai-DSML/assets/61497490/87cfe001-0736-4064-ad6d-8c7c0a307fc9">
+<img width="266" alt="image" src="https://github.com/atul2602/IITG.ai-DSML/assets/61497490/87cfe001-0736-4064-ad6d-8c7c0a307fc9"> 
+
 - Implementation
 - New Kernel : Gaussian
+---
+- Read for scratch implementation : [Kaggle](https://www.kaggle.com/code/fareselmenshawii/svm-from-scratch)
