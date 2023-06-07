@@ -1,4 +1,4 @@
-## Support Vector Machines
+# Support Vector Machines
 - Supervised
 > StatQuest 
 
@@ -75,5 +75,53 @@ $$\zeta_{i} = Max(0, d(x_i , Support Plane))$$
 
 - Implementation
 - New Kernel : Gaussian
----
+
+#### Code
 - Read for scratch implementation : [Kaggle](https://www.kaggle.com/code/fareselmenshawii/svm-from-scratch)
+
+---
+# K-Nearest Neighbours
+> Supervised
+- Use K nearest neighbours in plot (example : PCA), assign category with most votes.
+- [Scratch Implementation](https://blog.devgenius.io/implementing-k-nearest-neighbors-from-scratch-in-python-d5eaaf558d49)
+- [Elaborate Scratch Kaggle](https://www.kaggle.com/code/fareselmenshawii/knn-from-scratch)
+---
+# Unsupervised Learning
+> They group things together, not good at predictions
+- Pattern recognition
+### Clustering  
+
+- Exclusive(hard clustering) : K-Means
+    - Image segmentation, market segmentation, image compression 
+- Overlapping(soft clustering) : Fuzzy K-Means
+- Hierarchial : Make clusters from clusteres
+    - Agglomerative
+    - Divisive
+- Probabilistic : determine which probability distribution a point belongs to
+    - Gaussian Mixture Models
+    - Expectiation maximisation
+
+### Association Rules
+- Looks for relationship between variables
+- Eg. market basket analysis: which all items are bought together often?
+
+### Dimensionality Reduction
+- PCA : Linear transformation on data
+    - PC1: Maximises variance of the dataset
+    - PC2: Maximises variance, orthogonal to PC1 
+- SVD : Matrix Factorisation
+- Autoencoders
+
+### Applications
+- Google News categorisation
+- Computer Vision: Object detection
+- Medical imaging: Image segmentation, detection, classification
+- Anomaly detection ?
+- Create customer personas ?
+- Recommender systems
+
+### Challenges
+- High complexity algorithms, longer training times
+- Lack of transparency on clustering criteria
+
+ 
