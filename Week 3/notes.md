@@ -123,5 +123,19 @@ $$\zeta_{i} = Max(0, d(x_i , Support Plane))$$
 ### Challenges
 - High complexity algorithms, longer training times
 - Lack of transparency on clustering criteria
-
+---
+# K-Means Clustering
+> Unsupervised
+- Basic Algorithm
+    - Select K
+    2. Randomly select K data points
+    3. Cluster all other points based on nearest cluster
+    - Change all centroids to means of clusters
+    - Repeat step iii. till clustering stablises
+    - Repeat ii, and choose clustering with best variance (WCSS)
+        - Euclidean Distance
+        - Manhattan Distance 
+- Choosing K
+    - Plot _Reduction in Variation_ vs _K_, and choose elbow point
+- [Scratch implementation](https://www.kaggle.com/code/fareselmenshawii/kmeans-from-scratch)
  
