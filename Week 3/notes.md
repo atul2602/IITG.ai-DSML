@@ -138,4 +138,7 @@ $$\zeta_{i} = Max(0, d(x_i , Support Plane))$$
 - Choosing K
     - Plot _Reduction in Variation_ vs _K_, and choose elbow point
 - [Scratch implementation](https://www.kaggle.com/code/fareselmenshawii/kmeans-from-scratch)
+- Image compression example and drawbacks : [TowardsDataScience](https://towardsdatascience.com/k-means-clustering-algorithm-applications-evaluation-methods-and-drawbacks-aa03e644b48a  
+
+**Advanced Clustering Algorithms** : [Kaggle](https://www.kaggle.com/code/azminetoushikwasi/different-clustering-techniques-and-algorithms)
  
