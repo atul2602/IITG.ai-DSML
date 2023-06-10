@@ -141,4 +141,18 @@ $$\zeta_{i} = Max(0, d(x_i , Support Plane))$$
 - Image compression example and drawbacks : [TowardsDataScience](https://towardsdatascience.com/k-means-clustering-algorithm-applications-evaluation-methods-and-drawbacks-aa03e644b48a  
 
 **Advanced Clustering Algorithms** : [Kaggle](https://www.kaggle.com/code/azminetoushikwasi/different-clustering-techniques-and-algorithms)
+---
+# PCA
+- Reduce N-d data to 2-d for clustering
+- Get idea of features important for clustering
+- Method:
+    - Plot data points, shift center to mean
+    - Fit N-1 d line through origin
+        - Maximise sum of distance of projections onto the line, from origin : _PC1_
+        - Slope of features gives "spread" of data due to that feature, along PC1
+        - Unit vector along PC1 is called _Singular Vector_ for PC1
+        - Component along each feature is called _Loading Score_
+    - Rotate PC axes, and redact projected points to get PCA plot
+    - $\frac{SS(distance from PC1)}{n-1} = Variation for PC1$, tells about how strong is this PC for clustering
+ - We get `n` PC lines for n-d data, choose top 2 variation lines (Plot a _Scree plot_ of variation).
  
