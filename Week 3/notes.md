@@ -164,5 +164,10 @@ $$\zeta_{i} = Max(0, d(x_i , Support Plane))$$
  ---
  # Decision Trees
  - [Article](https://blog.paperspace.com/decision-trees/): Crisp with code
+ - [Scratch](https://www.kaggle.com/code/fareselmenshawii/decision-tree-from-scratch?scriptVersionId=130941860)
+ ---
+ ### Bonus
+ - [SVD](https://github.com/jonkrohn/ML-foundations/blob/master/notebooks/2-linear-algebra-ii.ipynb)
+ - [Anomaly detection with isolation forest](https://www.youtube.com/watch?v=TP3wdwD8JVY)
  
  
