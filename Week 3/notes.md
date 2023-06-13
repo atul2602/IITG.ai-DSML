@@ -161,4 +161,8 @@ $$\zeta_{i} = Max(0, d(x_i , Support Plane))$$
      - Explains Linear Algebra: SVD of $ZZ^{T}$, $Z$ is covariance matrix
  - [Article](https://towardsdatascience.com/a-one-stop-shop-for-principal-component-analysis-5582fb7e0a9c) : Crisp explanation
  
+ ---
+ # Decision Trees
+ - [Article](https://blog.paperspace.com/decision-trees/): Crisp with code
+ 
  
