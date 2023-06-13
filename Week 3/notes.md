@@ -155,4 +155,10 @@ $$\zeta_{i} = Max(0, d(x_i , Support Plane))$$
     - Rotate PC axes, and redact projected points to get PCA plot
     - $\frac{SS(distance from PC1)}{n-1} = Variation for PC1$, tells about how strong is this PC for clustering
  - We get `n` PC lines for n-d data, choose top 2 variation lines (Plot a _Scree plot_ of variation).
+ - [Article](https://www.analyticsvidhya.com/blog/2020/12/an-end-to-end-comprehensive-guide-for-pca/)
+     - PCA aims to maximise signal to noise ratio of data
+     - Curse of dimensionality: Multiple correlated features are redundant
+     - Explains Linear Algebra: SVD of $ZZ^{T}$, $Z$ is covariance matrix
+ - [Article](https://towardsdatascience.com/a-one-stop-shop-for-principal-component-analysis-5582fb7e0a9c) : Crisp explanation
+ 
  
