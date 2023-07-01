@@ -1,11 +1,14 @@
 ## Ensemble Learning
+
+> campusX, [Blog](https://duchesnay.github.io/pystatsml/machine_learning/ensemble_learning.html)
+
 - Multiple models for a single result
 - Potentially averages out high bias and variance
 - Individual models called _weak learners_, combine to form a _strong learner_
 - Homogenous (same model, different data)
-  - Bagging and Boosting
+  - Bagging (decrease variance) and Boosting (decrease bias)
 - Heterogenous (different models)
-  - Stacking
+  - Stacking (improve prediction)
 
 ### Types of Ensemble Learning
 #### Voting
@@ -15,8 +18,13 @@
   - Stands for "Bootstrapped Aggregation"
   - Same models get different data
   - Data is randomly picked and **replaced** in the set
+  - Voting:
+    - Soft (average of probabilities)
+    - Hard (majority class)
+  - Enables intensive parallelisation
   - Eg: Random Forest
 #### Boosting
+  - A sequential technique, usually preffered for low variance, high bias weak learners
   - On a high level, each model **learns the mistakes** of previous one: so miscalculated datapoints of first models are sent to next one for training
   - Examples:
     - AdaBoost
